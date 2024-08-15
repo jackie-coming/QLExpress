@@ -19,4 +19,14 @@ public class Issue187InEqualitySignTest {
         System.out.println(result);
 
     }
+    @Test
+    public void test1() throws Exception {
+        ExpressRunner runner = new ExpressRunner(false, true);
+        DefaultContext<String, Object> context = new DefaultContext<>();
+
+        String express = "1+2*3";
+        Object result = runner.execute(express, context, null, true, true);
+        System.out.println(result);
+
+    }
 }

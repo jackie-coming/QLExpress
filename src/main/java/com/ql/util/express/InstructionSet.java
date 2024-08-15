@@ -291,7 +291,7 @@ public class InstructionSet {
         try {
             StringBuilder stringBuilder = new StringBuilder();
             // 输出宏定义
-            for (FunctionInstructionSet set : this.functionDefine.values()) {
+                for (FunctionInstructionSet set : this.functionDefine.values()) {
                 appendSpace(stringBuilder, level);
                 stringBuilder.append(set.type).append(":").append(set.name).append("(");
                 for (int i = 0; i < set.instructionSet.parameterList.size(); i++) {
