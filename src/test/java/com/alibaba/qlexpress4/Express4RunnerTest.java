@@ -75,7 +75,7 @@ public class Express4RunnerTest {
 
     @Test
     public void debugExample() {
-        Express4Runner express4Runner = new Express4Runner(InitOptions.DEFAULT_OPTIONS);
+        Express4Runner express4Runner = new Express4Runner(InitOptions.builder().debug(true).build());
         QLOptions debugOptions = QLOptions.builder()
                 .build();
         Object result = express4Runner.execute("1+1", Collections.emptyMap(), debugOptions);
